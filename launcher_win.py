@@ -12,13 +12,13 @@ from PySide6 import QtCore, QtWidgets, QtGui
 
 # ---------------- CONFIG ------------------
 
-LAUNCHER_VERSION = "1.0.0"
+LAUNCHER_VERSION = "1.0.1"
 
-BASE_URL_WIN = "https://github.com/acierto-incomodo/ThePlanetCrafter/releases/latest/download/Build.zip"
-BUILD_URL_LINUX = "https://github.com/acierto-incomodo/ThePlanetCrafter/releases/latest/download/Build.zip"
-VERSION_URL = "https://github.com/acierto-incomodo/ThePlanetCrafter/releases/latest/download/version.txt"
-RELEASE_NOTES_URL = "https://github.com/acierto-incomodo/ThePlanetCrafter/releases/latest/download/ReleaseNotes.txt"
-URL_7ZR = "https://github.com/acierto-incomodo/ThePlanetCrafter/releases/latest/download/7zr.exe"
+BASE_URL_WIN = "https://github.com/acierto-incomodo/ThePlanetCrafterGame/releases/latest/download/Build.zip"
+BUILD_URL_LINUX = "https://github.com/acierto-incomodo/ThePlanetCrafterGame/releases/latest/download/Build.zip"
+VERSION_URL = "https://github.com/acierto-incomodo/ThePlanetCrafterGame/releases/latest/download/version.txt"
+RELEASE_NOTES_URL = "https://github.com/acierto-incomodo/ThePlanetCrafterGame/releases/latest/download/ReleaseNotes.txt"
+URL_7ZR = "https://github.com/acierto-incomodo/ThePlanetCrafterGame/releases/latest/download/7zr.exe"
 
 EXE_NAME_WIN   = "Build/Planet Crafter.exe"
 EXE_NAME_LINUX = "Build/Planet Crafter.exe"
@@ -296,7 +296,7 @@ class LauncherWindow(QtWidgets.QWidget):
                 download_file(URL_7ZR, p_7zr, progress_cb)
 
                 # 2. Descargar partes .001 a .012
-                total_parts = 12
+                total_parts = 2
                 for i in range(1, total_parts + 1):
                     ext = f".{i:03d}"
                     url = f"{BASE_URL_WIN}{ext}"
