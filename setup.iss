@@ -22,7 +22,7 @@ Source: "C:\Users\melio\Documents\GitHub\ThePlanetCrafterGame\theplanetcrafter.i
 Source: "C:\Users\melio\Documents\GitHub\ThePlanetCrafterGame\theplanetcrafter.png"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{commonprograms}\StormGamesStudios\ThePlanetCrafterGame"; Filename: "{app}\installer_updater.exe"; IconFilename: "{app}\theplanetcrafter.ico"; Comment: "Lanzador de The Planet Crafter"; WorkingDir: "{app}"
+Name: "{commonprograms}\StormGamesStudios\The Planet Crafter"; Filename: "{app}\installer_updater.exe"; IconFilename: "{app}\theplanetcrafter.ico"; Comment: "Lanzador de The Planet Crafter"; WorkingDir: "{app}"
 Name: "{commonprograms}\StormGamesStudios\Desinstalar The Planet Crafter"; Filename: "{uninstallexe}"; IconFilename: "{app}\theplanetcrafter.ico"; Comment: "Desinstalar The Planet Crafter Game"
 
 [Registry]
